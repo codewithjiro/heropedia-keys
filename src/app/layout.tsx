@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Topnav } from "./components/topnav";
 
 export const metadata: Metadata = {
-  title: "HeroPedia Heroes",
+  title: "Hero Pedia Heroes",
   description: "Explore the world of heroes",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${geist.variable}`}>
+      <html lang="en" className={`${geist.variable} dark`}>
         <body>
           <Topnav />
           {children}
