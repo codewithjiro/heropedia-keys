@@ -1,6 +1,6 @@
 export async function GET() {
   const apiKey = process.env.MY_KEY;
-  const url = "https://ipt-keys.vercel.app/api/ping";
+  const url = "https://ipt-final-topaz.vercel.app/api/ping";
 
   const apiRes = await fetch(url, {
     headers: {
@@ -35,7 +35,7 @@ export async function POST(request: Request) {
   const apiKey = process.env.MY_KEY;
   const { keyword } = await request.json();
 
-  const url = "https://ipt-keys.vercel.app/api/echo";
+  const url = "https://ipt-final-topaz.vercel.app/api/echo";
 
   const apiRes = await fetch(url, {
     method: "POST",
